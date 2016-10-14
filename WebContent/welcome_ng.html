@@ -10,5 +10,26 @@
 		<h1>{{ message }}</h1>
 		<h1>Hello {{yourName}}!</h1>
 	</div>
+	<br/>
+	<div>First Name : {{ employee.firstName }}</div>
+	<div>Last Name : {{ employee.lastName }}</div>
+	<div>Gender : {{ employee.gender }}</div>
+	<br/>
+	<div>
+		<table>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Gender</th>
+			</tr>
+			<tbody>
+				<tr ng-repeat = "emp in employees">
+					<td>{{emp.firstName}}</td>
+					<td>{{emp.lastName}}</td>
+					<td>{{emp.gender}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </body>
 </html>
